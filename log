@@ -1,0 +1,13 @@
+call profiler:
+kernprof -l -v name.py
+
+seq2seq model
+
+3 past--> 3 future
+SINGLE LAYER: trainable paras 9000
+case1: 1 example
+case2: 2 examples
+case3: 3 examples
+case4: 4 examples: CRC
+
+case5: 3 examples, 2 layers
