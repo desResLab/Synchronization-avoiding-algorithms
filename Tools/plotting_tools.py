@@ -1,0 +1,187 @@
+from matplotlib import pyplot as plt
+
+
+# plot predictions
+def plot_full(Y_plot,Pred_plot,mk,Save_name,PATH):
+  fig2 = plt.figure(figsize=(16, 16))
+  plt.subplot(3,3,1)
+  plt.plot(Y_plot[:,6], '-x', markevery=mk, label = 'exact')
+  plt.plot(Pred_plot[:,6], label = 'pred')
+  plt.xlabel('Predicted steps')
+  plt.ylabel('x-displacement')
+  plt.ylim([-0.06,0])
+  plt.legend()
+
+  plt.subplot(3,3,2)
+  plt.plot(Y_plot[:,7], '-x', markevery=mk, label = 'exact')
+  plt.plot(Pred_plot[:,7], label = 'pred')
+  plt.xlabel('Predicted steps')
+  plt.ylabel('y-displacement')
+  plt.ylim([-0.5,0])
+  plt.legend()
+
+  plt.subplot(3,3,3)
+  plt.plot(Y_plot[:,8], '-x', markevery=mk, label = 'exact')
+  plt.plot(Pred_plot[:,8], label = 'pred')
+  plt.xlabel('Predicted steps')
+  plt.ylabel('z-displacement')
+  plt.ylim([-1,0])
+  plt.legend()
+
+  plt.subplot(3,3,4)
+  plt.plot(Y_plot[:,45], '-x', markevery=mk, label = 'exact')
+  plt.plot(Pred_plot[:,45], label = 'pred')
+  plt.xlabel('Predicted steps')
+  plt.ylabel('x-displacement')
+  plt.ylim([-0.06,0])
+  plt.legend()
+
+  plt.subplot(3,3,5)
+  plt.plot(Y_plot[:,46], '-x', markevery=mk, label = 'exact')
+  plt.plot(Pred_plot[:,46], label = 'pred')
+  plt.xlabel('Predicted steps')
+  plt.ylabel('y-displacement')
+  plt.ylim([-0.5,0])
+  plt.legend()
+
+  plt.subplot(3,3,6)
+  plt.plot(Y_plot[:,47], '-x', markevery=mk, label = 'exact')
+  plt.plot(Pred_plot[:,47], label = 'pred')
+  plt.xlabel('Predicted steps')
+  plt.ylabel('z-displacement')
+  plt.ylim([-1,0])
+  plt.legend()
+
+  plt.subplot(3,3,7)
+  plt.plot(Y_plot[:,72], '-x', markevery=mk, label = 'exact')
+  plt.plot(Pred_plot[:,72], label = 'pred')
+  plt.xlabel('Predicted steps')
+  plt.ylabel('x-displacement')
+  plt.ylim([-0.06,0])
+  plt.legend()
+
+  plt.subplot(3,3,8)
+  plt.plot(Y_plot[:,73], '-x', markevery=mk, label = 'exact')
+  plt.plot(Pred_plot[:,73], label = 'pred')
+  plt.xlabel('Predicted steps')
+  plt.ylabel('y-displacement')
+  plt.ylim([-0.5,0])
+  plt.legend()
+
+  plt.subplot(3,3,9)
+  plt.plot(Y_plot[:,74], '-x', markevery=mk, label = 'exact')
+  plt.plot(Pred_plot[:,74], label = 'pred')
+  plt.xlabel('Predicted steps')
+  plt.ylabel('z-displacement')
+  plt.ylim([-1,0])
+  plt.legend()
+  # save the prediction fig
+  fig_name = PATH + '/prediction.png'
+  plt.savefig(fig_name)
+  return 0
+
+
+
+# plot predictions
+def plot_subset(Y_plot,Pred_plot,mk,Save_name,PATH):
+  fig2 = plt.figure(figsize=(16, 16))
+  plt.subplot(4,3,1)
+  plt.plot(Y_plot[:,0], '-x', markevery=mk, label = 'exact')
+  plt.plot(Pred_plot[:,0], label = 'pred')
+  plt.xlabel('Predicted steps')
+  plt.ylabel('x-displacement')
+  #plt.ylim([-0.1,0])
+  plt.legend()
+
+  plt.subplot(4,3,2)
+  plt.plot(Y_plot[:,1], '-x', markevery=mk, label = 'exact')
+  plt.plot(Pred_plot[:,1], label = 'pred')
+  plt.xlabel('Predicted steps')
+  plt.ylabel('y-displacement')
+  #plt.ylim([-0.5,0])
+  plt.legend()
+
+  plt.subplot(4,3,3)
+  plt.plot(Y_plot[:,2], '-x', markevery=mk, label = 'exact')
+  plt.plot(Pred_plot[:,2], label = 'pred')
+  plt.xlabel('Predicted steps')
+  plt.ylabel('z-displacement')
+  #plt.ylim([-1,0])
+  plt.legend()
+
+  plt.subplot(4,3,4)
+  plt.plot(Y_plot[:,3], '-x', markevery=mk, label = 'exact')
+  plt.plot(Pred_plot[:,3], label = 'pred')
+  plt.xlabel('Predicted steps')
+  plt.ylabel('x-displacement')
+  #plt.ylim([-0.1,0])
+  plt.legend()
+
+  plt.subplot(4,3,5)
+  plt.plot(Y_plot[:,4], '-x', markevery=mk, label = 'exact')
+  plt.plot(Pred_plot[:,4], label = 'pred')
+  plt.xlabel('Predicted steps')
+  plt.ylabel('y-displacement')
+  #plt.ylim([-0.5,0])
+  plt.legend()
+
+  plt.subplot(4,3,6)
+  plt.plot(Y_plot[:,5], '-x', markevery=mk, label = 'exact')
+  plt.plot(Pred_plot[:,5], label = 'pred')
+  plt.xlabel('Predicted steps')
+  plt.ylabel('z-displacement')
+  #plt.ylim([-1,0])
+  plt.legend()
+
+  plt.subplot(4,3,7)
+  plt.plot(Y_plot[:,6], '-x', markevery=mk, label = 'exact')
+  plt.plot(Pred_plot[:,6], label = 'pred')
+  plt.xlabel('Predicted steps')
+  plt.ylabel('x-displacement')
+  #plt.ylim([-0.1,0])
+  plt.legend()
+
+  plt.subplot(4,3,8)
+  plt.plot(Y_plot[:,7], '-x', markevery=mk, label = 'exact')
+  plt.plot(Pred_plot[:,7], label = 'pred')
+  plt.xlabel('Predicted steps')
+  plt.ylabel('y-displacement')
+  #plt.ylim([-0.5,0])
+  plt.legend()
+
+  plt.subplot(4,3,9)
+  plt.plot(Y_plot[:,8], '-x', markevery=mk, label = 'exact')
+  plt.plot(Pred_plot[:,8], label = 'pred')
+  plt.xlabel('Predicted steps')
+  plt.ylabel('z-displacement')
+  #plt.ylim([-1,0])
+  plt.legend()
+
+  plt.subplot(4,3,10)
+  plt.plot(Y_plot[:,9], '-x', markevery=mk, label = 'exact')
+  plt.plot(Pred_plot[:,9], label = 'pred')
+  plt.xlabel('Predicted steps')
+  plt.ylabel('x-displacement')
+  #plt.ylim([-0.1,0])
+  plt.legend()
+
+  plt.subplot(4,3,11)
+  plt.plot(Y_plot[:,10], '-x', markevery=mk, label = 'exact')
+  plt.plot(Pred_plot[:,10], label = 'pred')
+  plt.xlabel('Predicted steps')
+  plt.ylabel('y-displacement')
+  #plt.ylim([-0.5,0])
+  plt.legend()
+
+  plt.subplot(4,3,12)
+  plt.plot(Y_plot[:,11], '-x', markevery=mk, label = 'exact')
+  plt.plot(Pred_plot[:,11], label = 'pred')
+  plt.xlabel('Predicted steps')
+  plt.ylabel('z-displacement')
+  #plt.ylim([-1,0])
+  plt.legend()
+  
+  # save the prediction fig
+  fig_name = PATH + '/prediction.png'
+  plt.savefig(fig_name)
+  return 0
