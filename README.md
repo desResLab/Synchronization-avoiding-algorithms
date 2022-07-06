@@ -2,8 +2,8 @@
 
 Code references for the numerical examples in the paper:
 
-> *Data-driven synchronization-avoiding algorithms in the
-explicit distributed structural analysis of soft tissue, Guoxiang Grayson Tong and Daniele E. Schiavazzi, 2022, submitted*
+> [*Data-driven synchronization-avoiding algorithms in the
+explicit distributed structural analysis of soft tissue, Guoxiang Grayson Tong and Daniele E. Schiavazzi, 2022, submitted*](https://arxiv.org/abs/2207.02194)
 
 ## Code descriptions:
 
