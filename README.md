@@ -37,7 +37,7 @@ A minimal working example is included in this repository.
 - Execute ```mpirun -np 2 python3 Online_predictor.py```. The predicted solution will be saved to ```Results/Dynamics/```.
 - Execute ```python3 plotter.py``` inside ```Results/```. The comparison picture can be seen as ```Comparison.pdf```.
 
-Note: The hyperparameter setting in ```Model_training.py``` is primarily for fast trainingm, so not optimal.
+Note: The hyperparameter setting in ```Model_training.py``` is primarily for fast training, so not optimal.
 
 ## Dependencies: 
 - MPI for distributed computation: [```mpi4py```](https://pypi.org/project/mpi4py/)
